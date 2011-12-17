@@ -21,5 +21,20 @@
   { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n\t$0\nend"}, "context" : [
     { "key": "selector", "operator": "equal", "operand": "source.ruby", "match_all": true },
     { "key": "preceding_text", "operator": "regex_contains", "operand": "module \\w*$", "match_all": true }
-  ]}
+  ]},
+
+  // Leader t is the same as command t
+  { "keys": [",", "t"], "command": "show_overlay",
+    "args": {"overlay": "goto", "show_files": true},
+    "context": [{"key": "setting.command_mode"}]
+  },
+
+  // Running specs
+  { "keys": [",", "."], "command": "run_single_ruby_test", "context": [{"key": "setting.command_mode"}] },
+  { "keys": [",", "s"], "command": "run_single_ruby_test", "context": [{"key": "setting.command_mode"}] },
+  { "keys": [",", "S"], "command": "run_all_ruby_test", "context": [{"key": "setting.command_mode"}] },
+  { "keys": [",", "-"], "command": "run_last_ruby_test", "context": [{"key": "setting.command_mode"}] },
+
+  // ctrl-6 switches files
+  { "keys" : ["ctrl+6"], "command": "prev_view_in_stack" }
 ]
