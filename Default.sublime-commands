@@ -1,0 +1,4 @@
+[
+  { "caption": ":A - Switch between code and Spec (Ruby)", "command": "switch_between_code_and_test" },
+  { "caption": ":A - Switch between code and Spec (Jasmine)", "command": "jasmine_switch_between_code_and_spec" }
+]

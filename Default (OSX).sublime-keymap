@@ -1,0 +1,7 @@
+[
+  // Add a end after a do
+  { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n\t$0\nend"}, "context" : [
+    { "key": "selector", "operator": "equal", "operand": "source.ruby", "match_all": true },
+    { "key": "preceding_text", "operator": "regex_contains", "operand": "do\\s*(\\|.*\\|)?\\s*$", "match_all": true }
+  ]}
+]
