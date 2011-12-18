@@ -35,6 +35,6 @@
   { "keys": [",", "S"], "command": "run_all_ruby_test", "context": [{"key": "setting.command_mode"}] },
   { "keys": [",", "-"], "command": "run_last_ruby_test", "context": [{"key": "setting.command_mode"}] },
 
-  // ctrl-6 switches files
-  { "keys" : ["ctrl+6"], "command": "prev_view_in_stack" }
+  // Comment line
+  { "keys": [",", "c", " "], "command": "toggle_comment", "context": [{"key": "setting.command_mode"}] }
 ]
