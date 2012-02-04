@@ -1,0 +1,7 @@
+<snippet>
+  <description>Define Function</description>
+  <content><![CDATA[defn ${1:name} [${2:params}]
+  ($0)]]></content>
+  <tabTrigger>defn</tabTrigger>
+  <scope>source.clojure</scope>
+</snippet>

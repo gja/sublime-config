@@ -4,5 +4,7 @@ My personal sublime config
  * Install package control from http://wbond.net/sublime_packages/package_control
  * Install the following packages
    * Linter
-   * RubyTools
+   * RubyTest
    * Jasmine
+   * BeautifyRuby
+   * DChelemsky's RSpec Bundle
