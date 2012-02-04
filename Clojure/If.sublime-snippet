@@ -1,8 +1,8 @@
 <snippet>
 	<description>If</description>
-  <content><![CDATA[if ($0)
-  (comment when true)
-  (comment when false)]]></content>
+  <content><![CDATA[if ($1)
+  (${2:comment when true})
+  (${0:comment when false})]]></content>
   <tabTrigger>if</tabTrigger>
   <scope>source.clojure</scope>
 </snippet>
