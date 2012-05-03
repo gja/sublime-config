@@ -1,28 +1,4 @@
 [
-  // Add a end after a do
-  { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n\t$0\nend"}, "context" : [
-    { "key": "selector", "operator": "equal", "operand": "source.ruby", "match_all": true },
-    { "key": "preceding_text", "operator": "regex_contains", "operand": "do( \\|.*\\|)?$", "match_all": true }
-  ]},
-
-  // Add a end after a def
-  { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n\t$0\nend"}, "context" : [
-    { "key": "selector", "operator": "equal", "operand": "source.ruby", "match_all": true },
-    { "key": "preceding_text", "operator": "regex_contains", "operand": "def \\w*(\\(.*\\))?$", "match_all": true }
-  ]},
-
-  // Add a end after a class
-  { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n\t$0\nend"}, "context" : [
-    { "key": "selector", "operator": "equal", "operand": "source.ruby", "match_all": true },
-    { "key": "preceding_text", "operator": "regex_contains", "operand": "class \\w*( < \\w*)?$", "match_all": true }
-  ]},
-
-  // Add a end after a module
-  { "keys": ["enter"], "command": "insert_snippet", "args": {"contents": "\n\t$0\nend"}, "context" : [
-    { "key": "selector", "operator": "equal", "operand": "source.ruby", "match_all": true },
-    { "key": "preceding_text", "operator": "regex_contains", "operand": "module \\w*$", "match_all": true }
-  ]},
-
   // Leader t is the same as command t
   { "keys": [",", "t"], "command": "show_overlay",
     "args": {"overlay": "goto", "show_files": true},
