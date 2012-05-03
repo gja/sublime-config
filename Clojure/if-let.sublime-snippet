@@ -1,0 +1,8 @@
+<snippet>
+  <description>If Let</description>
+  <content><![CDATA[if-let [${1:name} ${2:value}]
+  (${comment when true})
+  (comment when nil)]]></content>
+  <tabTrigger>if-let</tabTrigger>
+  <scope>source.clojure</scope>
+</snippet>
